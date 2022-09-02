@@ -1,0 +1,40 @@
+.work-title {
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @include font(700, 36px, 1.17);
+    }
+
+
+
+.work-list {
+    display: flex;
+    justify-content: space-between;
+
+    &>li>img {
+            display: block;
+        }
+}
+
+.work-top-wrap {
+    position: relative;
+    max-height: 294px;
+}
+
+.work-top-title {
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+
+    @include font(700, 14px, 1.14);
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}

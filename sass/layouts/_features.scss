@@ -1,0 +1,63 @@
+.features {
+    padding-bottom: 0;
+}
+
+.feature__title,
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.feature__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    gap: 30px;
+
+    letter-spacing: 0.03em;
+}
+
+.feature__card {
+    flex-basis: calc(100% / 4 - 90px / 4);
+}
+
+.feature__icon {
+    width: 70px;
+    height: 70px;
+    fill: #000000;
+}
+
+.icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+    background: #f5f4fa;
+    border-radius: 4px;
+}
+
+.feature__item {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+    @include font(700, 14px, 1.14, null);
+    text-transform: uppercase;
+}
+
+.feature__text {
+    margin: 0;
+
+    color: var(--secondary-title-color);
+    @include font(400, 14px, 1.71, null);
+    }
+
