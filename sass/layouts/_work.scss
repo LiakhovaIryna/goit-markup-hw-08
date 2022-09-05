@@ -1,7 +1,17 @@
+.work{
+    display: none;
+    @include desktop{
+        display: block;
+    }
+    
+    
+}
+
 .work-title {
-    margin: 0;
-    margin-bottom: 50px;
-    text-align: center;
+ 
+        margin: 0;
+            margin-bottom: 50px;
+            text-align: center; 
 
     @include font(700, 36px, 1.17);
     }
@@ -9,8 +19,9 @@
 
 
 .work-list {
-    display: flex;
-    justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
+ 
 
     &>li>img {
             display: block;
@@ -18,11 +29,12 @@
 }
 
 .work-top-wrap {
-    position: relative;
+     position: relative;
     max-height: 294px;
 }
 
 .work-top-title {
+    @include desktop {}
     margin: 0;
     padding-top: 27px;
     padding-bottom: 27px;
