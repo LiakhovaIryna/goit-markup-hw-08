@@ -5,8 +5,7 @@
     margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
+    background-image: linear-gradient (rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
     @include retina{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero-mob-2x.jpg);
     }
@@ -27,8 +26,7 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    // background-image: var(--hero-gradient), url(../images/.hero.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/.hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero-2x.jpg);
                 }
