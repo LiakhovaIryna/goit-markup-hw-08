@@ -17,7 +17,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./css/styles.css" />
-		<link rel="stylesheet" href="./css/main.min.css">
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 
 	<body>
@@ -40,7 +40,7 @@
 						</li>
 					</ul>
 				</nav>
-				<ul class="contacts-list tel list">
+				<ul class="contacts-list list">
 					<li class="contacts-list__item">
 						<a href="mailto:info@devstudio.com" class="contacts-list__link tel envelop">
 							<svg class="contacts-list__icon" width="16" height="10">
@@ -58,65 +58,56 @@
 						</a>
 					</li>
 				</ul>
+				<button type="button" class="btn-mob-open" data-menu-open>
+				<svg class="mob-open-icon" width="40" height="40"><use href="./images/sprite.svg#icon-mob-open"></use></svg>
+			</button>
 			</div>
-			<button type="button" class="btn-mob-open" data-modal-close>
-					<svg class="modal-icon" width="18" height="18"><use href="./images/sprite.svg#icon-close"></use></svg>
-				</button>
-			<div class="mob-menu">
-				<div class="conteiner">
-					
-				<div class="mob-menu-wrap">
-				<button type="button" class="btn-mob-close" data-modal-close>
-					<svg class="modal-icon" width="18" height="18"><use href="./images/sprite.svg#icon-close"></use></svg>
-				</button>
-				
-					<nav class="navigation-mobile">
-					<ul class="navigation-mobile__list list">
-						<li class="navigation-mobile__item">
-							<a href="./index.html" class="navigation-mobile__link current">Студія</a>
+						<div class="mob-menu" data-menu>
+				<div class="container">
+					<div class="mob-menu-wrap">
+						<button type="button" class="btn-mob-close" data-menu-close>
+							<svg class="modal-icon" width="18" height="18"><use href="./images/sprite.svg#icon-close"></use></svg>
+						</button>
+
+						<nav class="navigation-mobile">
+							<ul class="navigation-mobile__list list">
+								<li class="navigation-mobile__item">
+									<a href="./index.html" class="navigation-mobile__link current">Студія</a>
+								</li>
+								<li class="navigation-mobile__item">
+									<a href="./portfolio.html" class="navigation-mobile__link">Портфоліо</a>
+								</li>
+								<li class="navigation-mobile__item">
+									<a href="" class="navigation-mobile__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mob-menu-wrap">
+					<ul class="contacts-mobile list">
+						<li class="contacts-mobile__item">
+							<a href="tel:+380961111111" class="contacts-mobile__link tel">+38 096 111 11 11</a>
 						</li>
-						<li class="navigation-mobile__item">
-							<a href="./portfolio.html" class="navigation-mobile__link">Портфоліо</a>
-						</li>
-						<li class="navigation-mobile__item">
-							<a href="" class="navigation-mobile__link">Контакти</a>
+						<li class="contacts-mobile__item">
+							<a href="mailto:info@devstudio.com" class="contacts-mobile__link mail">info@devstudio.com</a>
 						</li>
 					</ul>
-				</nav></div>
-				<ul class="contacts-mobile list">
-					<li class="contacts-mobile__item">
-						<a href="tel:+380961111111" class="contacts-mobile__link">
-						+38 096 111 11 11
-						</a>
-					</li>
-					<li class="contacts-mobile__item">
-						<a href="mailto:info@devstudio.com" class="contacts-mobile__link">
-						info@devstudio.com
-						</a>
-					</li>
-				</ul>
-				<ul class="mobile-soc list">
-									<li class="mobile-soc-item">
-										<a href="" class="mobile-soc-link">Instagram
-											
-										</a>
-									</li>
-									<li class="mobile-soc-item">
-										<a href="" class="mobile-soc-link">Twitter
-											
-										</a>
-									</li>
-									<li class="mobile-soc-item">
-										<a href="" class="mobile-soc-link">Facebook
-											
-										</a>
-									</li>
-									<li class="mobile-soc-item">
-										<a href="" class="mobile-soc-link">Linkedin
-																					</a>
-									</li>
-								</ul>
-</div>
+					<ul class="mobile-soc list">
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Instagram</a>
+						</li>
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Twitter</a>
+						</li>
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Facebook</a>
+						</li>
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Linkedin</a>
+						</li>
+					</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -179,36 +170,27 @@
 							<div class="work-top-wrap">
 								<h3 class="work-top-title">Десктопні додатки</h3>
 								<picture>
-									<source
-									srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
-									media="(min-width:1200px)">
+									<source srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x" media="(min-width:1200px)" />
 									<img src="./images/box1.jpg" alt="Написання коду" width="370" height="294" />
 								</picture>
-								
 							</div>
 						</li>
 						<li>
 							<div class="work-top-wrap">
 								<h3 class="work-top-title">Мобільні додатки</h3>
 								<picture>
-									<source
-									srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
-									media="(min-width:1200px)">
+									<source srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x" media="(min-width:1200px)" />
 									<img src="./images/box2.jpg" alt="Створення мобільних додатків" width="370" height="294" />
 								</picture>
-								
 							</div>
 						</li>
 						<li>
 							<div class="work-top-wrap">
 								<h3 class="work-top-title">Дизайнерські рішення</h3>
 								<picture>
-									<source
-									srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
-									media="(min-width:1200px)">
+									<source srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x" media="(min-width:1200px)" />
 									<img src="./images/box3.jpg" alt="Дизайн сайтів" width="370" height="294" />
 								</picture>
-								
 							</div>
 						</li>
 					</ul>
@@ -220,18 +202,23 @@
 					<ul class="team-list list">
 						<li>
 							<picture>
-									<source
-									srcset="./images/teamcard1.jpg 1x, ./images/teamcard1-2x.jpg 2x"
-									media="(min-width:1200px)">
-									<source
+								<source srcset="./images/teamcard1.jpg 1x, ./images/teamcard1-2x.jpg 2x" media="(min-width:1200px)" />
+								<source
 									srcset="./images/teamcard1-tab.jpg 1x, ./images/teamcard1-tab-2x.jpg 2x"
-									media="(min-width:768px)">
-									<source
+									media="(min-width:768px)"
+								/>
+								<source
 									srcset="./images/teamcard1-mob.jpg 1x, ./images/teamcard1-mob-2x.jpg 2x"
-									media="(max-width:768px)">
-									<img src="./images/teamcard1-mob.jpg" alt="Фото Ігора Дем'яненко Продукт дизайнер" width="460" height="450" />
+									media="(max-width:768px)"
+								/>
+								<img
+									src="./images/teamcard1-mob.jpg"
+									alt="Фото Ігора Дем'яненко Продукт дизайнер"
+									width="460"
+									height="450"
+								/>
 							</picture>
-							
+
 							<div class="photo-description">
 								<h3 class="team-item">Ігор Дем'яненко</h3>
 								<p class="team-text">Product Designer</p>
@@ -269,16 +256,21 @@
 						</li>
 						<li>
 							<picture>
-									<source
-									srcset="./images/teamcard2.jpg 1x, ./images/teamcard2-2x.jpg 2x"
-									media="(min-width:1200px)">
-									<source
+								<source srcset="./images/teamcard2.jpg 1x, ./images/teamcard2-2x.jpg 2x" media="(min-width:1200px)" />
+								<source
 									srcset="./images/teamcard2-tab.jpg 1x, ./images/teamcard2-tab-2x.jpg 2x"
-									media="(min-width:768px)">
-									<source
+									media="(min-width:768px)"
+								/>
+								<source
 									srcset="./images/teamcard2-mob.jpg 1x, ./images/teamcard2-mob-2x.jpg 2x"
-									media="(max-width:768px)">
-									<img src="./images/teamcard2-mob.jpg" alt="Фото Ольги Рєпіної Фронтенд девелопер" width="460" height="450" />
+									media="(max-width:768px)"
+								/>
+								<img
+									src="./images/teamcard2-mob.jpg"
+									alt="Фото Ольги Рєпіної Фронтенд девелопер"
+									width="460"
+									height="450"
+								/>
 							</picture>
 							<div class="photo-description">
 								<h3 class="team-item">Ольга Рєпіна</h3>
@@ -317,18 +309,18 @@
 						</li>
 						<li>
 							<picture>
-									<source
-									srcset="./images/teamcard3.jpg 1x, ./images/teamcard3-2x.jpg 2x"
-									media="(min-width:1200px)">
-									<source
+								<source srcset="./images/teamcard3.jpg 1x, ./images/teamcard3-2x.jpg 2x" media="(min-width:1200px)" />
+								<source
 									srcset="./images/teamcard3-tab.jpg 1x, ./images/teamcard3-tab-2x.jpg 2x"
-									media="(min-width:768px)">
-									<source
+									media="(min-width:768px)"
+								/>
+								<source
 									srcset="./images/teamcard3-mob.jpg 1x, ./images/teamcard3-mob-2x.jpg 2x"
-									media="(max-width:768px)">
-									<img src="./images/teamcard3-mob.jpg" alt="Фото Миколи Тарасова Маркетолог" width="460" height="450" />
+									media="(max-width:768px)"
+								/>
+								<img src="./images/teamcard3-mob.jpg" alt="Фото Миколи Тарасова Маркетолог" width="460" height="450" />
 							</picture>
-							
+
 							<div class="photo-description">
 								<h3 class="team-item">Микола Тарасов</h3>
 								<p class="team-text">Marketing</p>
@@ -366,18 +358,23 @@
 						</li>
 						<li>
 							<picture>
-									<source
-									srcset="./images/teamcard4.jpg 1x, ./images/teamcard4-2x.jpg 2x"
-									media="(min-width:1200px)">
-									<source
+								<source srcset="./images/teamcard4.jpg 1x, ./images/teamcard4-2x.jpg 2x" media="(min-width:1200px)" />
+								<source
 									srcset="./images/teamcard4-tab.jpg 1x, ./images/teamcard4-tab-2x.jpg 2x"
-									media="(min-width:768px)">
-									<source
+									media="(min-width:768px)"
+								/>
+								<source
 									srcset="./images/teamcard4-mob.jpg 1x, ./images/teamcard4-mob-2x.jpg 2x"
-									media="(max-width:768px)">
-									<img src="./images/teamcard4-mob.jpg" alt="Фото Михайла Єрмакова Дизайнер сайтів" width="460" height="450" />
+									media="(max-width:768px)"
+								/>
+								<img
+									src="./images/teamcard4-mob.jpg"
+									alt="Фото Михайла Єрмакова Дизайнер сайтів"
+									width="460"
+									height="450"
+								/>
 							</picture>
-							
+
 							<div class="photo-description">
 								<h3 class="team-item">Михайло Єрмаков</h3>
 								<p class="team-text">UI Designer</p>
@@ -532,10 +529,11 @@
 							<label>
 								<input class="subscription-input" type="email" name="email" placeholder="E-mail" />
 							</label>
-							<button class="subscription-submit" type="submit">Підписатися
+							<button class="subscription-submit" type="submit">
+								Підписатися
 								<svg class="subscription-icon" width="24" height="24">
-								<use href="./images/sprite.svg#icon-send"></use>
-							    </svg>								
+									<use href="./images/sprite.svg#icon-send"></use>
+								</svg>
 							</button>
 						</div>
 					</form>
@@ -596,5 +594,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
