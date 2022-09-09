@@ -158,22 +158,31 @@ padding-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-        
-
+    }    
 }
 
 .btn-mob-close, .btn-mob-open{
     display: block;
     margin-left: auto;
     margin-bottom: 30px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.mob-close-icon{
+fill: #000000;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .btn-mob-close:hover &,
+    .btn-mob-close:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .btn-mob-open{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
-    border: none;
+   
     @include tablet {
             display: none;
         }

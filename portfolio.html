@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="./css/main.min.css">
 	</head>
 	<body>
-		<!-- <header class="header header--bordered">
+		<header class="header header--bordered">
 			<div class="container header__container">
 				<a href="./index.html" class="logo header__logo" lang="en">
 					<span>Web</span>
@@ -58,8 +58,57 @@
 						</a>
 					</li>
 				</ul>
+					<button type="button" class="btn-mob-open" data-menu-open>
+				<svg class="mob-open-icon" width="40" height="40"><use href="./images/sprite.svg#icon-mob-open"></use></svg>
+			</button>
 			</div>
-		</header> -->
+			<div class="mob-menu" data-menu>
+				<div class="container">
+					<div class="mob-menu-wrap">
+						<button type="button" class="btn-mob-close" data-menu-close>
+							<svg class="mob-close-icon" width="40" height="40"><use href="./images/sprite.svg#icon-close"></use></svg>
+						</button>
+
+						<nav class="navigation-mobile">
+							<ul class="navigation-mobile__list list">
+								<li class="navigation-mobile__item">
+									<a href="./index.html" class="navigation-mobile__link current">Студія</a>
+								</li>
+								<li class="navigation-mobile__item">
+									<a href="./portfolio.html" class="navigation-mobile__link">Портфоліо</a>
+								</li>
+								<li class="navigation-mobile__item">
+									<a href="" class="navigation-mobile__link">Контакти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mob-menu-wrap">
+					<ul class="contacts-mobile list">
+						<li class="contacts-mobile__item">
+							<a href="tel:+380961111111" class="contacts-mobile__link tel">+38 096 111 11 11</a>
+						</li>
+						<li class="contacts-mobile__item">
+							<a href="mailto:info@devstudio.com" class="contacts-mobile__link mail">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="mobile-soc list">
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Instagram</a>
+						</li>
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Twitter</a>
+						</li>
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Facebook</a>
+						</li>
+						<li class="mobile-soc-item">
+							<a href="" class="mobile-soc-link">Linkedin</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+		</header>
 		<main>
 			<section class="portfolio">
 				<div class="container portfolio">
@@ -435,5 +484,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
