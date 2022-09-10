@@ -6,13 +6,17 @@
 
             @include tablet {
                     justify-content: space-between;
-                }
+                     }
 
             @include desktop{
                 justify-content: space-between;
             }
 
         }
+}
+.header-top{
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -34,24 +38,47 @@
 }
 
 .header__logo {
-    margin-right: 93px;    
+    @include tablet {
+            margin-right: 80px;
+        }
+    
+        @include desktop {
+            margin-right: 90px;
+        }
+        
 }
 
 a>span {
     color: #2196f3;
 }
 
-.navigation__list,
 .contacts-list.list {
     display: flex;
         
-    @include font(500, 14px, 1.14, 0.02em);
+    @include font(500, 12px, 1.17, 0.02em);
     }
+.navigation__list{
+margin-right: 90px;
+display: flex;
+@include font(500, 14px, 1.14, 0.02em);
+        }
 
-.navigation__item:not(:last-child),
-.contacts-list__item:not(:last-child) {
+.navigation__item:not(:last-child){
     margin-right: 50px;
 }
+
+.contacts-list__item:not(:last-child) {
+    margin-right: 50px;
+    @include tablet{
+        margin-right: 0;
+    }
+        @include desktop {
+            margin-right: 30px;
+        }
+
+}
+
+
 
 .navigation__list.tel,
 .contacts-list.tel {
@@ -116,9 +143,15 @@ padding-top: 10px;
         }
 }
 
-.contacts-list__icon {
-    margin-right: 10px;
+.contacts-list__icon {   
     fill: currentColor;
+    @include tablet {
+            margin-right: 8px;
+        }
+    
+        @include desktop {
+            margin-right: 10px;
+        }
 }
 
 .navigation,
