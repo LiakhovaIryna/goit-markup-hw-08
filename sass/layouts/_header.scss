@@ -3,6 +3,7 @@
 	&__container {
 		display: flex;
 		align-items: center;
+		
 
 		@include tablet {
 			justify-content: space-between;
@@ -10,6 +11,7 @@
 
 		@include desktop {
 			justify-content: space-between;
+			align-items: baseline;
 		}
 	}
 }
@@ -53,7 +55,12 @@ a > span {
 .contacts-list.list {
 	display: flex;
 
-	@include font(500, 12px, 1.17, 0.02em);
+	@include tablet {
+			@include font(500, 12px, 1.17, 0.02em);
+		}
+	@include desktop {
+			@include font(500, 14px, 1.17, 0.02em);
+		}
 }
 .navigation__list {
 	margin-right: 90px;
@@ -69,6 +76,7 @@ a > span {
 	margin-right: 50px;
 	@include tablet {
 		margin-right: 0;
+		margin-bottom: 10px;
 	}
 	@include desktop {
 		margin-right: 30px;

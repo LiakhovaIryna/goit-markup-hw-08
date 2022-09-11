@@ -1,5 +1,7 @@
 .features {
+	@include desktop{
 	padding-bottom: 0;
+	}
 }
 
 .feature__title,

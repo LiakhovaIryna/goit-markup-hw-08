@@ -5,9 +5,11 @@
 	margin-right: auto;
 	padding-top: 118px;
 	padding-bottom: 118px;
-	background-image: linear-gradient (rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
 	@include retina {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero-mob-2x.jpg);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-2x.jpg);
 	}
 	background-repeat: no-repeat;
 	background-position: center;
@@ -16,9 +18,11 @@
 	text-align: center;
 
 	@include tablet {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
 		@include retina {
-			background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero-tab-2x.jpg);
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab-2x.jpg);
 		}
 	}
 
@@ -26,9 +30,11 @@
 		height: 600px;
 		padding-top: 200px;
 		padding-bottom: 200px;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 		@include retina {
-			background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/hero-2x.jpg);
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-2x.jpg);
 		}
 	}
 }
