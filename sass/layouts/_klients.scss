@@ -1,72 +1,60 @@
 .klients-title {
-    margin: 0;
-    margin-bottom: 30px;
+	margin: 0;
+	margin-bottom: 30px;
 
-    @include font(700, 28px, 1.18);
-    text-align: center;
-    
-    @include desktop{
-        @include font(700, 36px, 1.17);
-        margin-bottom: 50px;
-    }
+	@include font(700, 28px, 1.18);
+	text-align: center;
+
+	@include desktop {
+		@include font(700, 36px, 1.17);
+		margin-bottom: 50px;
+	}
 }
 
 .klient-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .klient-logo-item {
-    display: block;
-    width: calc(100% - 30px) / 2;
-    
-    //     @include tablet {
-    //         width: calc(100% - 60px) / 3;
-    //     }
-    
-    //     @include desktop {
-    //         width: calc(100% - 150px) / 6;
-    //     }
-    
+	display: block;
+	width: calc(100% - 30px) / 2;
 }
 
 .klient-logo-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    width: 130px;
-    @include mobile{
-        width: 210px;
-    }
-    @include tablet{
-        width: 226px;
-    }
-    @include desktop{
-        width: 170px;
-    }
-    height: 92px;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	width: 130px;
+	@include mobile {
+		width: 210px;
+	}
+	@include tablet {
+		width: 226px;
+	}
+	@include desktop {
+		width: 170px;
+	}
+	height: 92px;
+	border: 1px solid rgba(175, 177, 184, 1);
+	border-radius: 4px;
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-            border: 1px solid var(--accent-color);
-        }
+	&:hover,
+	&:focus {
+		border: 1px solid var(--accent-color);
+	}
 }
 
 .klient-logo-icon {
-    fill: rgba(175, 177, 184, 1);
+	fill: rgba(175, 177, 184, 1);
 
-    .klient-logo-link:hover &,
-        .klient-logo-link:focus & {
-            fill: var(--accent-color);
-        }
+	.klient-logo-link:hover &,
+	.klient-logo-link:focus & {
+		fill: var(--accent-color);
+	}
 }
-
-
-

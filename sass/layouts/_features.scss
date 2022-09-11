@@ -1,77 +1,76 @@
 .features {
-    padding-bottom: 0;
+	padding-bottom: 0;
 }
 
 .feature__title,
 .checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .feature__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    gap: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	gap: 30px;
 
-    letter-spacing: 0.03em;
+	letter-spacing: 0.03em;
 }
 
 .feature__card {
-width: 100%;
+	width: 100%;
 
-@include tablet {
-width: calc(100% / 2 - 30px / 2);        
-    }
+	@include tablet {
+		width: calc(100% / 2 - 30px / 2);
+	}
 
-@include desktop {
-width: calc(100% / 4 - 90px / 4);
-    }
+	@include desktop {
+		width: calc(100% / 4 - 90px / 4);
+	}
 }
 
 .feature__icon {
-    width: 70px;
-    height: 70px;
-    fill: #000000;
+	width: 70px;
+	height: 70px;
+	fill: #000000;
 }
 
 .icon-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
 
-    background: #f5f4fa;
-    border-radius: 4px;
+	background: #f5f4fa;
+	border-radius: 4px;
 }
 
 .feature__item {
-    margin: 0;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    text-align: center;
+	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	text-align: center;
 
-    @include font(700, 14px, 1.14, null);
-    text-transform: uppercase;
+	@include font(700, 14px, 1.14, null);
+	text-transform: uppercase;
 
-    @include tablet{
-        text-align: start;
-    }
+	@include tablet {
+		text-align: start;
+	}
 }
 
 .feature__text {
-    margin: 0;
+	margin: 0;
 
-    color: var(--secondary-title-color);
-    @include font(400, 14px, 1.71, null);
-    }
-
+	color: var(--secondary-title-color);
+	@include font(400, 14px, 1.71, null);
+}

@@ -1,222 +1,219 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 
-    background-color: var(--secondary-background-color);
-    @include font(400, 14px, 1.71);
-    
-    &>.container {
-        display: flex;
-        
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
+	background-color: var(--secondary-background-color);
+	@include font(400, 14px, 1.71);
 
-        @include tablet{
-        flex-direction: row;
-        justify-content: space-around;
-        }
+	& > .container {
+		display: flex;
 
-        @include desktop{
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-        }
-    }
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+
+		@include tablet {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		@include desktop {
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: space-between;
+		}
+	}
 }
 
 .footer-container {
-    justify-content: start;
-    
-    max-width: 250px;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 60px;
-    
-    @include desktop{
-        margin-bottom: 0;
-    }
+	justify-content: start;
 
+	max-width: 250px;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 60px;
+
+	@include desktop {
+		margin-bottom: 0;
+	}
 }
 
 .footer-title {
-    margin-top: 0;
-    margin-bottom: 20px; 
-    text-align: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
 
-    @include desktop{
-    text-align: start;
-    }
+	@include desktop {
+		text-align: start;
+	}
 
-    @include font(700, 14px, 1.14);
-    text-transform: uppercase;
-    color: #ffffff;
+	@include font(700, 14px, 1.14);
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .footer-logo {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-    text-align: center;
+	display: block;
+	margin-bottom: 20px;
+	padding: 0;
+	text-align: center;
 
-    @include desktop {
-            text-align: start;
-        }
-    
-    color: #ffffff;
+	@include desktop {
+		text-align: start;
+	}
+
+	color: #ffffff;
 }
 
 .adress {
-    font-style: normal;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: block;
-    margin-bottom: 8px;
-    text-align: center;
+	font-style: normal;
+	color: #ffffff;
+	text-decoration: none;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	display: block;
+	margin-bottom: 8px;
+	text-align: center;
 
-    @include desktop {
-            text-align: start;
-            margin-bottom: 9px;
-        }
+	@include desktop {
+		text-align: start;
+		margin-bottom: 9px;
+	}
 
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        }
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
 
 .footer-list {
-    color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
 
-    li{
-        text-align: center;
+	li {
+		text-align: center;
 
-        @include desktop {
-                text-align: start;
-            }
-    }
+		@include desktop {
+			text-align: start;
+		}
+	}
 
-    &>li:not(:nth-last-child(-n + 1)) {
-            margin-bottom: 6px;
-        }
+	& > li:not(:nth-last-child(-n + 1)) {
+		margin-bottom: 6px;
+	}
 }
 
 .footer-item {
-    font-family: inherit;
-    font-style: normal;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        }
+	font-family: inherit;
+	font-style: normal;
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
 
 .footer-soc-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: rgba(255, 255, 255, 0.1);
 
-    &:hover,
-    &:focus {
-        background-color: var(--accent-color);
-    }
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+	}
 }
 
 .subscription-field {
-    width: 100%;
-    @include desktop{
-        width: 570px;
-    }
+	width: 100%;
+	@include desktop {
+		width: 570px;
+	}
 }
 
 .footer-soc-icon {
-    fill: #ffffff;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	fill: #ffffff;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.subscription.container{
-    @include desktop{
-        margin: 0;
-        width: 570px;
-    }
+.subscription.container {
+	@include desktop {
+		margin: 0;
+		width: 570px;
+	}
 }
 .subscription-title {
-    margin: 0;
-    margin-bottom: 20px;
-    text-align: center;
+	margin: 0;
+	margin-bottom: 20px;
+	text-align: center;
 
-    @include desktop {
-            text-align: start;
-        }
-    
-    @include font(700, 14px, 1.14);
-    text-transform: uppercase;
-    color: #ffffff;
+	@include desktop {
+		text-align: start;
+	}
+
+	@include font(700, 14px, 1.14);
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .subscription-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @include desktop{
-        flex-direction: row;
-        
-    }
-   
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@include desktop {
+		flex-direction: row;
+	}
 }
 
 .subscription-input {
-    margin-right: 0;
-    margin-bottom: 20px;
-    
-    width: 100%;
-    @include mobile{
-        width: 450px;
-    }
-    
-    @include desktop{
-        width: 358px;
-        margin-right: 12px;
-        margin-bottom: 0;
-    }
-    
-    height: 50px;
-    padding: 15px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: transparent;
-    cursor: pointer;
+	margin-right: 0;
+	margin-bottom: 20px;
 
-    &::placeholder {
-            @include font(400, 16px, 1.25);
-            color: rgba(255, 255, 255, 0.6);
-        }
+	width: 100%;
+	@include mobile {
+		width: 450px;
+	}
+
+	@include desktop {
+		width: 358px;
+		margin-right: 12px;
+		margin-bottom: 0;
+	}
+
+	height: 50px;
+	padding: 15px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background-color: transparent;
+	cursor: pointer;
+
+	&::placeholder {
+		@include font(400, 16px, 1.25);
+		color: rgba(255, 255, 255, 0.6);
+	}
 }
 
 .subscription-submit {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 200px;
-    height: 50px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 200px;
+	height: 50px;
 
-    @include font(700, 16px, 1.88, 0.06em);
-    background-color: var(--accent-color);
-    color: #ffffff;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+	@include font(700, 16px, 1.88, 0.06em);
+	background-color: var(--accent-color);
+	color: #ffffff;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
 }
