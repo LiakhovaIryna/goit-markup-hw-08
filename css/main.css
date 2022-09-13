@@ -1224,6 +1224,7 @@ a > span {
 }
 .portfolio-list:not(:last-child) {
   margin-bottom: 40px;
+  gap: 0;
 }
 @media screen and (min-width: 768px) {
   .portfolio-list:not(:last-child) {
@@ -1295,10 +1296,20 @@ button:hover, button:focus {
 
 li.list-btn:not(:nth-last-child(-n+1)) {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  li.list-btn:not(:nth-last-child(-n+1)) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  li.list-btn:not(:nth-last-child(-n+1)) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-title {
-  width: 370px;
   margin: 0;
   margin-bottom: 4px;
   font-weight: 700;
@@ -1356,6 +1367,7 @@ li.list-btn:not(:nth-last-child(-n+1)) {
 }
 
 .gallery-description {
+  width: 370px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
@@ -1371,7 +1383,6 @@ li.list-btn:not(:nth-last-child(-n+1)) {
 }
 
 .portfolio-filtr {
-  width: 370px;
   margin: 0;
   padding-top: 0;
   font-weight: 400;

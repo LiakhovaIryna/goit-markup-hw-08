@@ -33,6 +33,8 @@
 
 	&:not(:last-child) {
 		margin-bottom: 40px;
+		gap: 0;
+		
 
 		@include tablet {
 			margin-bottom: 30px;
@@ -120,10 +122,17 @@ button {
 
 li.list-btn:not(:nth-last-child(-n + 1)) {
 	margin-right: 8px;
+	margin-bottom: 15px;
+	@include tablet{
+		margin-bottom: 0;
+	}
+	@include desktop{
+		margin-bottom: 0;
+	}
 }
 
 .portfolio-title {
-	width: 370px;
+	
 	margin: 0;
 	margin-bottom: 4px;
 
@@ -172,6 +181,7 @@ li.list-btn:not(:nth-last-child(-n + 1)) {
 }
 
 .gallery-description {
+	width: 370px;
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-top: 20px;
@@ -187,7 +197,7 @@ li.list-btn:not(:nth-last-child(-n + 1)) {
 }
 
 .portfolio-filtr {
-	width: 370px;
+	
 	margin: 0;
 	padding-top: 0;
 
